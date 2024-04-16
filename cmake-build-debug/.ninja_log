@@ -1,0 +1,18 @@
+# ninja log v5
+2	278	7350070594760075	build.ninja	13f7256ce6668181
+1	540	7350070600370640	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+542	700	7350070601912734	Factory/DesignPatterns.exe	5ef48fb83ff77425
+6	540	7350072642618290	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+540	654	7350072643705932	Factory/DesignPatterns.exe	5ef48fb83ff77425
+7	583	7350073243365824	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+583	705	7350073244520144	Factory/DesignPatterns.exe	5ef48fb83ff77425
+7	584	7350074583160900	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+584	714	7350074584405993	Factory/DesignPatterns.exe	5ef48fb83ff77425
+7	467	7350075183998891	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+468	577	7350075185039348	Factory/DesignPatterns.exe	5ef48fb83ff77425
+6	601	7350078943289697	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+601	725	7350078944488118	Factory/DesignPatterns.exe	5ef48fb83ff77425
+7	467	7350079286781537	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+467	592	7350079287943414	Factory/DesignPatterns.exe	5ef48fb83ff77425
+6	500	7350083074470755	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
+500	611	7350083075543346	Factory/DesignPatterns.exe	5ef48fb83ff77425
