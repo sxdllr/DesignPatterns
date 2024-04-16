@@ -795,7 +795,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project"
+			"value" : "DesignPatterns"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug"
+			"value" : "D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory"
 		},
 		{
 			"name" : "DesignPatterns_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "DesignPatterns_SOURCE_DIR",
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Work/Coding/PROJECTS/DesignPatterns"
+			"value" : "D:/Work/Coding/PROJECTS/DesignPatterns/Factory"
 		},
 		{
 			"name" : "Project_BINARY_DIR",

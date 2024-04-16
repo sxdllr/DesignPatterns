@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=DesignPatterns
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/msys64/mingw64/bin/ranlib.exe
@@ -243,13 +243,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-DesignPatterns_BINARY_DIR:STATIC=D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug
+DesignPatterns_BINARY_DIR:STATIC=D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory
 
 //Value Computed by CMake
-DesignPatterns_IS_TOP_LEVEL:STATIC=ON
+DesignPatterns_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-DesignPatterns_SOURCE_DIR:STATIC=D:/Work/Coding/PROJECTS/DesignPatterns
+DesignPatterns_SOURCE_DIR:STATIC=D:/Work/Coding/PROJECTS/DesignPatterns/Factory
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug
@@ -363,7 +363,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
