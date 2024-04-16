@@ -1,6 +1,11 @@
-#include <iostream>
+enum class GameMode
+{
+    Easy,
+    Medium,
+    Hard
+};
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+int main()
+{
+
 }

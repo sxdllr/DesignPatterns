@@ -3,4 +3,6 @@ project(DesignPatterns)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(DesignPatterns main.cpp)
+add_executable(DesignPatterns main.cpp
+        creature.h
+        spawner.h)
