@@ -1,12 +1,7 @@
 #include "spawner.h"
+#include <random>
 
-//spawn different numbers of creatures depending on the difficulty mode
-enum class GameMode
-{
-    easy,
-    medium,
-    hard
-};
+int Rnd();
 
 int main()
 {
@@ -14,68 +9,58 @@ int main()
     GoblinSpawner gs;
     DwarfSpawner ds;
     ElfSpawner es;
-    LizardSpawner ls;
 
     //spawning creature by one test
-    Creature* pCreature[4] = {nullptr, nullptr, nullptr, nullptr};
+    Creature* pCreature[3] = {nullptr, nullptr, nullptr };
 
     pCreature[0] = gs.Spawn();
     pCreature[1] = ds.Spawn();
     pCreature[2] = es.Spawn();
-    pCreature[3] = ls.Spawn();
-
     // casting creatures to proper type
-    for(auto& i : pCreature)
+    for(const auto& i : pCreature)
     {
         auto pGoblin = dynamic_cast<Goblin*>(i);
         if(pGoblin)
         {
-            std::cout << "Goblin: \n"
-                      << "HP: " << pGoblin->GetHP() << ' '
-                      << "Attack: " <<pGoblin->GetAttack() << ' '
-                      << "Speed: " <<pGoblin->GetSpeed() << "\n";
+            pGoblin->Spawned();
         }
 
         auto pDwarf = dynamic_cast<Dwarf*>(i);
         if(pDwarf)
         {
-            std::cout << "Dwarf: \n"
-                      << "HP: " << pDwarf->GetHP() << ' '
-                      << "Attack: " <<pDwarf->GetAttack() << ' '
-                      << "Speed: " <<pDwarf->GetSpeed() << "\n";
+            pDwarf->Spawned();
         }
 
         auto pElf = dynamic_cast<Elf*>(i);
         if(pElf)
         {
-            std::cout << "Elf: \n"
-                      << "HP: " << pElf->GetHP() << ' '
-                      << "Attack: " <<pElf->GetAttack() << ' '
-                      << "Speed: " <<pElf->GetSpeed() << "\n";
+            pElf->Spawned();
         }
     }
+    std::cout << "\n";
 
-    //clone test
-    Creature* pLiz = ls.Spawn();
+    int rnd = Rnd();
 
-    auto pLizard = dynamic_cast<Lizard*>(pLiz);
-    if(pLizard)
+    //spawning a pack of Goblins tests
+    std::vector<Creature*> GoblinPack(Rnd());
+    gs.SpawnPack(GoblinPack, rnd);
+
+    for(const auto& i: GoblinPack)
     {
-        std::cout << "Lizard: \n"
-                  << "HP: " << pLizard->GetHP() << ' '
-                  << "Attack: " <<pLizard->GetAttack() << ' '
-                  << "Speed: " <<pLizard->GetSpeed() << "\n";
+        auto pGoblin = dynamic_cast<Goblin*>(i);
+        if(pGoblin)
+        {
+            pGoblin->Spawned();
+        }
     }
-
-    auto pCL = pLizard->Clone(5, 5, 5);
-    auto pClonedLizard = dynamic_cast<Lizard*>(pCL);
-    if(pClonedLizard)
-    {
-        std::cout << "Cloned Lizard: \n"
-                  << "HP: " << pClonedLizard->GetHP() << ' '
-                  << "Attack: " <<pClonedLizard->GetAttack() << ' '
-                  << "Speed: " <<pClonedLizard->GetSpeed() << "\n";
-    }
-
     return EXIT_SUCCESS;
+}
+
+int Rnd()
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> distribution(1, 5);
+    int rnd = distribution(gen);
+    return rnd;
 }
