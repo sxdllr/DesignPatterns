@@ -1,37 +1,45 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <mutex>
 
-class Singleton
+class Item {
+public:
+    Item(const std::string& name) : _name(name) {}
+    const std::string& getName() const { return _name; }
+private:
+    std::string _name;
+};
+
+class Inventory
 {
 public:
-    static Singleton* Instance()
+    static Inventory & Instance()
     {
-        if (!_instance)
-        {
-            _instance = new Singleton;
-        }
+        static Inventory  _instance;
         return _instance;
     }
 
-    void PrintRegister()
-    {
-        std::cout << "Accessing the Singleton\n";
-        for (auto i : _registry)
-            std::cout << i << "\n";
+    void addItem(const std::string& itemName) {
+        std::lock_guard<std::mutex> lock(_mutex);
+        _items.emplace_back(itemName);
     }
 
-    void Register(std::string s)
-    {
-        _registry.push_back(s);
+    void printInventory() const {
+        std::lock_guard<std::mutex> lock(_mutex);
+        std::cout << "Inventory:\n";
+        for (const auto& item : _items) {
+            std::cout << "- " << item.getName() << "\n";
+        }
     }
+
+    Inventory (const Inventory &) = delete;
+    Inventory & operator=(const Inventory &) = delete;
 
 private:
-    Singleton() { std::cout << "Singleton was created\n"; }
-    ~Singleton() { std::cout << "Singleton was deleted\n"; }
+    Inventory () = default;
+    ~Inventory () = default;
 
-    static Singleton* _instance;
-    std::vector<std::string> _registry;
+    std::vector<Item> _items;
+    mutable std::mutex _mutex;
 };
-
-Singleton* Singleton::_instance = nullptr;

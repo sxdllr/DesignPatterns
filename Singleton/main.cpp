@@ -4,18 +4,19 @@
 
 int main()
 {
-    Singleton::Instance()->Register("Object 1");
-    Singleton::Instance()->Register("Object 2");
-    Singleton::Instance()->Register("Object 3");
-    Singleton::Instance()->PrintRegister();
+    Inventory::Instance().addItem("Scroll");
+    Inventory::Instance().addItem("Sword");
+    Inventory::Instance().addItem("Potion");
 
-    Singleton* singleton1 = Singleton::Instance();
-    singleton1->Register("Object 4");
+    Inventory::Instance().printInventory();
 
-    Singleton* singleton2 = Singleton::Instance();
-    singleton2->Register("Object 5");
+    Inventory& slot1 = Inventory::Instance();
+    slot1.addItem("Shield");
 
-    Singleton::Instance()->PrintRegister();
+    Inventory& slot2 = Inventory::Instance();
+    slot2.addItem("Helmet");
+
+    Inventory::Instance().printInventory();
 
     return EXIT_SUCCESS;
 }
