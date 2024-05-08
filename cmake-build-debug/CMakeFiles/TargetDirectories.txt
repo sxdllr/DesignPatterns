@@ -1,5 +1,8 @@
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory/CMakeFiles/DesignPatterns.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory/CMakeFiles/Factory.dir
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory/CMakeFiles/edit_cache.dir
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory/CMakeFiles/rebuild_cache.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/Singleton.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/edit_cache.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/rebuild_cache.dir

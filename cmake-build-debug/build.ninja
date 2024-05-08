@@ -69,37 +69,37 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target DesignPatterns
+# Object build statements for EXECUTABLE target Factory
 
 
 #############################################
-# Order-only phony target for DesignPatterns
+# Order-only phony target for Factory
 
-build cmake_object_order_depends_target_DesignPatterns: phony || Factory/CMakeFiles/DesignPatterns.dir
+build cmake_object_order_depends_target_Factory: phony || Factory/CMakeFiles/Factory.dir
 
-build Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj: CXX_COMPILER__DesignPatterns_unscanned_Debug D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/main.cpp || cmake_object_order_depends_target_DesignPatterns
-  DEP_FILE = Factory\CMakeFiles\DesignPatterns.dir\main.cpp.obj.d
+build Factory/CMakeFiles/Factory.dir/main.cpp.obj: CXX_COMPILER__Factory_unscanned_Debug D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/main.cpp || cmake_object_order_depends_target_Factory
+  DEP_FILE = Factory\CMakeFiles\Factory.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = Factory\CMakeFiles\DesignPatterns.dir
-  OBJECT_FILE_DIR = Factory\CMakeFiles\DesignPatterns.dir
+  OBJECT_DIR = Factory\CMakeFiles\Factory.dir
+  OBJECT_FILE_DIR = Factory\CMakeFiles\Factory.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target DesignPatterns
+# Link build statements for EXECUTABLE target Factory
 
 
 #############################################
-# Link the executable Factory\DesignPatterns.exe
+# Link the executable Factory\Factory.exe
 
-build Factory/DesignPatterns.exe: CXX_EXECUTABLE_LINKER__DesignPatterns_Debug Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj
+build Factory/Factory.exe: CXX_EXECUTABLE_LINKER__Factory_Debug Factory/CMakeFiles/Factory.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Factory\CMakeFiles\DesignPatterns.dir
+  OBJECT_DIR = Factory\CMakeFiles\Factory.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Factory\DesignPatterns.exe
-  TARGET_IMPLIB = Factory\libDesignPatterns.dll.a
-  TARGET_PDB = DesignPatterns.exe.dbg
+  TARGET_FILE = Factory\Factory.exe
+  TARGET_IMPLIB = Factory\libFactory.dll.a
+  TARGET_PDB = Factory.exe.dbg
 
 
 #############################################
@@ -125,11 +125,76 @@ build Factory/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build Factory/rebuild_cache: phony Factory/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Work/Coding/PROJECTS/DesignPatterns/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Singleton
+
+
+#############################################
+# Order-only phony target for Singleton
+
+build cmake_object_order_depends_target_Singleton: phony || Singleton/CMakeFiles/Singleton.dir
+
+build Singleton/CMakeFiles/Singleton.dir/main.cpp.obj: CXX_COMPILER__Singleton_unscanned_Debug D$:/Work/Coding/PROJECTS/DesignPatterns/Singleton/main.cpp || cmake_object_order_depends_target_Singleton
+  DEP_FILE = Singleton\CMakeFiles\Singleton.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = Singleton\CMakeFiles\Singleton.dir
+  OBJECT_FILE_DIR = Singleton\CMakeFiles\Singleton.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Singleton
+
+
+#############################################
+# Link the executable Singleton\Singleton.exe
+
+build Singleton/Singleton.exe: CXX_EXECUTABLE_LINKER__Singleton_Debug Singleton/CMakeFiles/Singleton.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Singleton\CMakeFiles\Singleton.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Singleton\Singleton.exe
+  TARGET_IMPLIB = Singleton\libSingleton.dll.a
+  TARGET_PDB = Singleton.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Singleton/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Work\Coding\PROJECTS\DesignPatterns\cmake-build-debug\Singleton && "D:\Progs\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Singleton/edit_cache: phony Singleton/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Singleton/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Work\Coding\PROJECTS\DesignPatterns\cmake-build-debug\Singleton && "D:\Progs\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Work\Coding\PROJECTS\DesignPatterns -BD:\Work\Coding\PROJECTS\DesignPatterns\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Singleton/rebuild_cache: phony Singleton/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
-build DesignPatterns: phony Factory/DesignPatterns.exe
+build Factory: phony Factory/Factory.exe
 
-build DesignPatterns.exe: phony Factory/DesignPatterns.exe
+build Factory.exe: phony Factory/Factory.exe
+
+build Singleton: phony Singleton/Singleton.exe
+
+build Singleton.exe: phony Singleton/Singleton.exe
 
 # =============================================================================
 # Folder targets.
@@ -139,14 +204,21 @@ build DesignPatterns.exe: phony Factory/DesignPatterns.exe
 #############################################
 # Folder: D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug
 
-build all: phony Factory/all
+build all: phony Factory/all Singleton/all
 
 # =============================================================================
 
 #############################################
 # Folder: D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory
 
-build Factory/all: phony Factory/DesignPatterns.exe
+build Factory/all: phony Factory/Factory.exe
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton
+
+build Singleton/all: phony Singleton/Singleton.exe
 
 # =============================================================================
 # Built-in targets
@@ -155,14 +227,14 @@ build Factory/all: phony Factory/DesignPatterns.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Work/Coding/PROJECTS/DesignPatterns/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Work/Coding/PROJECTS/DesignPatterns/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Singleton/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Work/Coding/PROJECTS/DesignPatterns/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Progs/CLion$ 2024.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Work/Coding/PROJECTS/DesignPatterns/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Factory/CMakeLists.txt D$:/Work/Coding/PROJECTS/DesignPatterns/Singleton/CMakeLists.txt: phony
 
 
 #############################################
