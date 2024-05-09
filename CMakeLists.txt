@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory("Factory")
 add_subdirectory("Singleton")
+add_subdirectory("Command")

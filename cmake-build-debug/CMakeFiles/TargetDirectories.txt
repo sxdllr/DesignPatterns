@@ -6,3 +6,6 @@ D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Factory/CMakeFiles/rebu
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/Singleton.dir
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/edit_cache.dir
 D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Singleton/CMakeFiles/rebuild_cache.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Command/CMakeFiles/Command.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Command/CMakeFiles/edit_cache.dir
+D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug/Command/CMakeFiles/rebuild_cache.dir
