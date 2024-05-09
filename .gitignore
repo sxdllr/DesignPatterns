@@ -1,0 +1,11 @@
+# CMake
+CMakeFiles/
+cmake-build-debug/
+cmake-build-release/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# CLion
+.idea/
+*.iml
