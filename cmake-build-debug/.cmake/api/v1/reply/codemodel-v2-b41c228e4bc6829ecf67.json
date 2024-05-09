@@ -1,0 +1,126 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Factory",
+					"jsonFile" : "directory-Factory-Debug-3837add1cdacbf5449b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Factory",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Singleton",
+					"jsonFile" : "directory-Singleton-Debug-3dddb33c77939e32b162.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Singleton",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Command",
+					"jsonFile" : "directory-Command-Debug-bb4b5b6c7c18509aae7f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Command",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "DesignPatterns",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "Command::@24aec6e4a02342e8c05f",
+					"jsonFile" : "target-Command-Debug-7c5cc1d3882646614195.json",
+					"name" : "Command",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Factory::@afec5811ca4b60e82f6b",
+					"jsonFile" : "target-Factory-Debug-bc37dc6deb8049d54009.json",
+					"name" : "Factory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Singleton::@e5e5c95bf18b7ef2b9d1",
+					"jsonFile" : "target-Singleton-Debug-2ae9052af397c1ad179c.json",
+					"name" : "Singleton",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Work/Coding/PROJECTS/DesignPatterns/cmake-build-debug",
+		"source" : "D:/Work/Coding/PROJECTS/DesignPatterns"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
