@@ -1,9 +1,0 @@
-# ninja log v5
-5	92	7368845360888696	Factory/CMakeFiles/DesignPatterns.dir/__/Singleton/main.cpp.obj	d58b902d709d51b9
-3	371	7369976644240844	build.ninja	13f7256ce6668181
-14	786	7368839224127646	Factory/CMakeFiles/DesignPatterns.dir/main.cpp.obj	d43fd41e3b23eb2f
-92	327	7368845363165910	Factory/DesignPatterns.exe	3d237e78ec38ed96
-5	566	7369146391083279	Singleton/CMakeFiles/Singleton.dir/main.cpp.obj	47f8cbf6eb1ad256
-566	673	7369146392094958	Singleton/Singleton.exe	c8d8fc464333991e
-2	484	7369977129248308	Command/CMakeFiles/Command.dir/main.cpp.obj	aba462f94348cd6c
-485	740	7369977131741325	Command/Command.exe	28bc7e61bbeb4ee8
