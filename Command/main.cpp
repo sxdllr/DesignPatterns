@@ -1,8 +1,12 @@
-#include <iostream>
+#include "command.h"
+
+//way to take objects && model them as commands that execute actions
 
 int main()
 {
-    std::cout << "Command\n";
+    Character ch("Yurii");
+    Move w;
+    w.execute(ch);
 
     return EXIT_SUCCESS;
 }
